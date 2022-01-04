@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    string gcdOfStrings(string a, string b) {
+        return (a+b==b+a) ? a.substr(0,gcd(a.length(),b.length())): -1;
+    }
+};
+
+int main(){
+    string s,t;
+    cin>>s;
+    cin>>t;
+    gcdOfStrings(s,t);
+}
